@@ -7,10 +7,10 @@ module.exports = {
     production : {
       key:'arya.pem',
       user : 'ubuntu',
-      host : '3.8.96.169',
+      host : '13.40.103.105',
       ref  : 'origin/main',
       repo : 'git@github.com:erangamdw/arya-taprobane.git',
-      path : 'home/ubuntu',
+      path: '/home/ubuntu', 
       'pre-deploy-local': '',
       'post-deploy' : 'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env production',
       'pre-setup': '',
