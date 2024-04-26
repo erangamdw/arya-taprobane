@@ -9,7 +9,7 @@ module.exports = {
       user : 'ubuntu',
       host : '3.8.96.169',
       ref  : 'origin/main',
-      repo : 'git@github.com:erangamdw/arya-taprobane.git',
+      repo : 'https://github.com/erangamdw/arya-taprobane.git',
       path : 'home/ubuntu',
       'pre-deploy-local': '',
       'post-deploy' : 'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env production',
